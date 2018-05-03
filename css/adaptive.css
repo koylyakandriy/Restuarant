@@ -1,0 +1,105 @@
+@media screen and (max-width: 570px){
+	.main--header{
+		display: block;
+		text-align: center;
+		padding-bottom: 0;
+	}
+	.main--header ul{
+		margin-top: 10px;
+	}
+	#visit{
+		margin-top: 10px;
+	}
+
+	#visit .visitContainer a{
+		margin-top: 10px;
+	}
+	#about .about__flex{
+		display: block;
+		text-align: center;
+		padding: 0;
+	}
+	#about .aboutContainer{
+		padding: 0;
+	}
+	#about .aboutContainer h3, #about .aboutContainer p{
+		margin-top: 10px;
+	}
+	#phone {
+		margin-top: 10px;
+		height: 100%;
+	}
+	#phone .phone__flex{
+		display: block;
+		text-align: center;
+	}
+	#phone .phone__flex img{
+		position: inherit;
+		margin-top: 10px;
+	}
+	#phone .phone__flex .phoneContainer{
+		width: 100%;
+	}
+	#phone .phone__flex .phoneContainer h3, 
+	#phone .phone__flex .phoneContainer p,
+	#phone .phone__flex .phoneContainer a{
+		margin-top: 10px;
+	}
+#dish{
+	margin-top: 10px;
+}
+
+#dish .chicken{
+	margin-top: 10px;
+	display: block;
+}
+#dish .chicken .chichenImg img {
+	width: 100%;
+}
+#dish .chicken .chickenContainer{
+	width: 100%;
+	text-align: center;
+}
+
+#dish .chicken .chickenContainer .order,
+#dish .chicken .chickenContainer h3,
+#dish .chicken .chickenContainer p{
+	margin-bottom: 10px;
+}
+#johny{
+	margin-top: 10px;
+}
+#service{
+	margin-top: 10px;
+}
+#service .serviceContainer{
+	display: block;
+	margin: 10px auto;
+}
+#service .serviceContainer:nth-child(2){
+	margin-top: 10px;
+}
+#service .serviceContainer img, #service .serviceContainer img:nth-child(2){
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+}
+#service .serviceContainer .serviceItem h3, #service .serviceContainer .serviceItem p{
+	margin-top: 10px;
+}
+#gellary, .flexpictures, #map, #map .mapContainer, footer,
+#footer .footerContainer{
+	margin-top: 10px;
+}
+#footer .footerContainer{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+#footer .footerContainer .leftCont p{
+	padding-top: 15px;
+}
+#footer .footerContainer ul{
+	display: inline-flex;
+	padding: 0;
+}
