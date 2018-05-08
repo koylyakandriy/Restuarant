@@ -8,18 +8,17 @@
 
 	<meta name="description" content="" />
 	<link rel="icon" href="img/Forma 1.png"/>
-	<!-- <link rel="stylesheet" href="css/normalize.css" /> -->
-	<!-- <link rel="stylesheet" href="css/layout.css" /> -->
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
 	<header>
 		<div class="ba-container">
 			<div class="main--header">
-				<h1>restuarant</h1>
+				<h1><a href="#">restuarant</a></h1>
 				<ul>
 					<li><a href="">Sign up</a></li>
 					<li class="line"></li>
@@ -142,8 +141,29 @@
 			</div>
 		</section>
 		<section id="map">
-			<img class="map" src="img/maphere.jpg">
-			<img class="shape" src="img/Shape1.png">
+			<div id="maps" class="gmaps"></div>
+			<script>
+		      function initMap() {
+		        var uluru = {lat: -25.363, lng: 131.044};
+		        var map = new google.maps.Map(document.getElementById('maps'), {
+		          zoom: 4,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		      }
+		    </script>
+		    <script async defer
+		    src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+		    </script>
+
+				<!-- Хотів добавити нормальну карту від гугла але шось не виходить. В консолі вибаиває помилка, не розумію в чому причина !!! -->
+				
+				<!-- <script async src="https://maps.googleapis.com/maps/api/js"></script>
+				<script src="js/main.js"></script> -->
+
 			<div class="ba-container">
 				<div class="mapContainer">
 					<h3>Contact US</h3>
@@ -159,7 +179,7 @@
 		<div class="ba-container">
 			<div class="footerContainer">
 				<div class="leftCont">
-					<p>Copyright 2016 @ All right reserved <span class="line"></span> Unsubscribe</p>
+					<p>Copyright 2016 @ All right reserved <span class="line"></span><a href="#">Unsubscribe</a></p>
 				</div>
 				<div class="rightCont">
 					<ul> Follow Us
@@ -172,6 +192,5 @@
 			</div>
 		</div>
 	</footer>
-
 </body>
 </html>

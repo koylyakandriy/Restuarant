@@ -10,16 +10,22 @@
   font-family: Light;
   src: url(../fonts/Lato/Lato-Light.ttf); }
 /**{
-	border: 1px solid red;
+  border: 1px solid red;
 }*/
+
+*{-webkit-transition: all .25s;-o-transition: all .25s;transition: all .25s;}
+
 body {
   max-width: 100%;
   width: 600px;
   min-width: 320px;
   margin: 0 auto;
-  font-family: Normal, sans-serif;
+  font-family: Regular;
   font-size: 16px;
-  color: #3b3b3b; }
+  color: #3b3b3b; 
+  -webkit-transition: all .25s; 
+  -o-transition: all .25s; 
+  transition: all .25s;}
 
 a {
   text-decoration: none; }
@@ -60,16 +66,27 @@ p {
 .main--header {
   padding: 22px 0;
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   font-family: Light; }
   .main--header h1 {
     text-transform: uppercase;
     font-size: 1.563em;
     margin: 0; }
+  .main--header h1 a{
+    color: #3b3b3b; }
   .main--header ul {
-    align-self: center;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
     list-style: none;
     margin: 0;
     padding: 0; }
@@ -118,6 +135,9 @@ p {
   width: 100%;
   margin-top: 60px; }
   #about .about__flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     /*width: 100%;*/ }
@@ -141,6 +161,9 @@ p {
   height: 250px;
   position: relative; }
   #phone .phone__flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     height: 100%; }
     #phone .phone__flex img {
@@ -179,8 +202,14 @@ p {
   #dish .chicken {
     margin-top: 30px;
     background: #dc4f45;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     #dish .chicken .chichenImg img {
       height: 100%;
       width: 248px; }
@@ -244,8 +273,14 @@ p {
     line-height: 2.083em;
     margin: 0 auto; }
   #service .serviceContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-bottom: 28px; }
     #service .serviceContainer:nth-child(4) {
       margin-bottom: 0; }
@@ -274,6 +309,9 @@ p {
     margin: 0 auto; }
 
 .flexpictures {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 30px; }
   .flexpictures .picturesLeft {
@@ -295,6 +333,9 @@ p {
   width: 100%;
   margin-top: 80px;
   position: relative; }
+  #map #maps {
+    height: 400px;
+  }
   #map .shape {
     position: absolute;
     top: 60px;
@@ -310,15 +351,27 @@ p {
   font-size: .781em; }
   #footer .footerContainer {
     margin-top: 70px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     #footer .footerContainer .leftCont {
       display: block; }
       #footer .footerContainer .leftCont .line {
         height: 14px;
         vertical-align: top; }
+      #footer .footerContainer .leftCont a{
+        color: #3b3b3b;
+        padding-left: 2px;}
     #footer .footerContainer ul {
       list-style: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; }
       #footer .footerContainer ul li {
         margin-left: 20px; }
@@ -326,5 +379,3 @@ p {
           color: #3b3b3b; }
           #footer .footerContainer ul li a:hover {
             color: #e57e77; }
-
-/*# sourceMappingURL=style.css.map */
